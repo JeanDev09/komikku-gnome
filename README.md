@@ -102,3 +102,4 @@ Komikku (コミック) is a Japanese word meaning `Comics`.
 - The application itself has no content and can be considered as a browser-like app.
 # komikku-gnome
 # komikku-gnome
+# komikku-gnome
