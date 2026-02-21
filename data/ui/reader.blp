@@ -1,0 +1,45 @@
+// SPDX-FileCopyrightText: 2019-2025 Valéry Febvre
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+using Gtk 4.0;
+using Adw 1;
+
+template $ReaderPage : Adw.NavigationPage {
+  tag: "reader";
+  title: _("Reader");
+  can-pop: false;
+  child: Adw.ToolbarView {
+    [top]
+    Revealer headerbar_revealer {
+      reveal-child: true;
+
+      Adw.HeaderBar {
+        centering-policy: strict;
+
+        [start]
+        Button back_button {
+          icon-name: "go-previous-symbolic";
+          tooltip-text: _("Back");
+        }
+        title-widget: Adw.WindowTitle title {
+        };
+
+        [start]
+        ToggleButton fullscreen_button {
+          icon-name: "view-fullscreen-symbolic";
+          tooltip-text: _("Toggle Fullscreen Mode");
+        }
+
+        [end]
+        MenuButton menu_button {
+          icon-name: "view-more-symbolic";
+          tooltip-text: _("Menu");
+        }
+      }
+    }
+
+    content: Overlay reader_overlay {
+    };
+  };
+}

@@ -1,0 +1,21 @@
+{
+    "name": "python3-curl_cffi",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"curl_cffi\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/fe/0b/559443dd7fcdeb424f353c239db3aa0421659f9bab26a89fc65b703cb486/curl_cffi-0.12.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "18aadb313a1fe23098e867f9e6e42c57c5c68985521a1fe5fb8ca15bb990341b",
+            "only-arches": ["x86_64"]
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/13/83/10addc9189c8eeb35e7b4c13033e84e174f534caef5df9f520403bcd546d/curl_cffi-0.12.0-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+            "sha256": "368dd6e354933c62d3b35afbecdc5e7e7817ba748db0d23f7276f89b7eec49e8",
+            "only-arches": ["aarch64"]
+        }
+    ]
+}

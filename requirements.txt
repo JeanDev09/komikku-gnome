@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2019-2025 Valéry Febvre
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Author: Valéry Febvre <vfebvre@easter-eggs.com>
+
+beautifulsoup4
+brotli >= 1.2.0
+colorthief
+dateparser >= 1.1.6
+ebooklib
+emoji
+keyring >= 21.6.0
+lxml >= 5.2.1
+natsort
+piexif
+pillow >= 11.3.0
+PyGObject
+PyJWT >= 2.10.1
+pypdf >= 6.4.2
+python_magic
+rarfile
+requests >= 2.32.4
+Unidecode
+
+# Optional dependencies
+-r requirements-optional.txt
